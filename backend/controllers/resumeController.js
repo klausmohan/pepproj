@@ -1,6 +1,7 @@
 import Resume from '../models/resumeModel.js'
 import path from 'path';
 import fs from 'fs';
+
 export const createResume = async (req, res) => {
     try {
         const { title } = req.body;

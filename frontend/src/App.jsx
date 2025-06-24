@@ -1,9 +1,13 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom';
+import LandingPage from './pages/LandingPage.jsx';
 
 const App = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Routes>
+      <Route path="/" element={<LandingPage />} />
+      </Routes>
     </div>
   );
 }
